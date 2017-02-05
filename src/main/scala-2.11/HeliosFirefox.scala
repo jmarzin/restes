@@ -1,7 +1,6 @@
 import java.util._
 import java.util.concurrent.TimeUnit
 import javax.swing.{JOptionPane, JPasswordField, JTextField}
-
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.support.ui.{ExpectedConditions, WebDriverWait}
 import org.openqa.selenium.{By, TimeoutException, WebDriverException, WebElement}
@@ -53,7 +52,7 @@ trait HeliosFirefox extends FirefoxDriver{
         throw new IllegalArgumentException
       }
     } else {
-      utilisateur = "jacques.marzin"
+      utilisateur = ""
       password = ""
     }
     get("http://portailapplicatif.appli.impots")
